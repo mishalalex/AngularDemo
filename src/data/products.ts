@@ -1,0 +1,38 @@
+export const products = [
+    {
+        id: 1,
+        name: 'Bored Apes',
+        price: 799,
+        quantity: 2,
+        status: 'in stock',
+        description: "NFT collection owned by celebrities",
+        imgaddress:"https://nftnewsinsider.com/wp-content/uploads/2021/06/boredape.jpg",
+    },
+    {
+        id: 2,
+        name: 'Crypto Punks',
+        price: 699,
+        quantity: 0,
+        status: 'out of stock',
+        description: "First NFT collection to get limelight",
+        imgaddress:"https://www.larvalabs.com/cryptopunks/cryptopunk3700.png",
+    },
+    {
+        id: 3,
+        name: 'Degen Apes',
+        price: 299,
+        quantity: 8,
+        status: 'in stock',
+        description: "Major NFT on Solana blockchain",
+        imgaddress:"https://media.howrare.is/images/da/a2b665aa9988c101c7a015d9367b608b.jpg",
+    },
+    {
+        id: 4,
+        name: 'Meta Homes',
+        price: 299,
+        quantity: 12,
+        status: 'in stock',
+        description: "Another NFT project on Solana blockchain",
+        imgaddress:"https://static.wixstatic.com/media/78b5e8_ea3da437ed324de2b45953a9c14d5c55~mv2.jpg/v1/fit/w_2500,h_1330,al_c/78b5e8_ea3da437ed324de2b45953a9c14d5c55~mv2.jpg",
+    },
+];

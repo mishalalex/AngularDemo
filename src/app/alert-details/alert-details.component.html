@@ -1,0 +1,10 @@
+<ng-container *ngIf = "productFromParent.quantity > 0 then template1 else template2"></ng-container>
+
+<ng-template #template1>
+    <button class="btn btn-primary" [disabled] = toggleButton (click) = "clickChildMe()">Check availablity</button>
+    <p *ngIf = "productFromParent.price < 700">This NFT is on discount </p>
+</ng-template>
+
+<ng-template #template2>
+    <p>Sorry, this NFT collection is sold out</p>
+</ng-template>
