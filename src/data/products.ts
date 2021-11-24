@@ -15,7 +15,7 @@ export const products = [
         quantity: 0,
         status: 'out of stock',
         description: "First NFT collection to get limelight",
-        imgaddress:"https://www.larvalabs.com/cryptopunks/cryptopunk3700.png",
+        imgaddress:"https://www.larvalabs.com/public/images/cryptopunks/shareimage.png",
     },
     {
         id: 3,
