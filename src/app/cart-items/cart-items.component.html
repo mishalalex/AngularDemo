@@ -23,7 +23,7 @@
                                 </div>
                             </div></td>
                             <td class="col-sm-1 col-md-1" style="text-align: center">
-                            <input type="email" (keyup)="0" #quantity class="form-control" id="exampleInputEmail1" value="1">
+                            <input #quantity type="email" (keyup)="updateQuantity(product.price,$any(quantity.value))" class="form-control" id="exampleInputEmail1" value="1">
                             </td>
                             <td class="col-sm-1 col-md-1 text-center"><strong>{{product.price}}</strong></td>
                             <td class="col-sm-1 col-md-1 text-center"><strong>{{product.price * $any(quantity.value)}}</strong></td>
@@ -38,28 +38,28 @@
                             <td>   </td>
                             <td>   </td>
                             <td><h5>Subtotal</h5></td>
-                            <td class="text-right"><h5><strong>$24.59</strong></h5></td>
+                            <td class="text-right"><h5><strong>${{sum}}</strong></h5></td>
                         </tr>
                         <tr>
                             <td>   </td>
                             <td>   </td>
                             <td>   </td>
                             <td><h5>Estimated tax</h5></td>
-                            <td class="text-right"><h5><strong>$6.94</strong></h5></td>
+                            <td class="text-right"><h5><strong>${{estimatedTax}}</strong></h5></td>
                         </tr>
                         <tr>
                             <td>   </td>
                             <td>   </td>
                             <td>   </td>
                             <td><h3>Total</h3></td>
-                            <td class="text-right"><h3><strong>$31.53</strong></h3></td>
+                            <td class="text-right"><h3><strong>${{totalPrice}}</strong></h3></td>
                         </tr>
                         <tr>
                             <td>   </td>
                             <td>   </td>
                             <td>   </td>
                             <td>
-                            <button type="button" class="btn btn-default">
+                            <button routerLink="/products" type="button" class="btn btn-default">
                                 <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
                             </button></td>
                             <td>
