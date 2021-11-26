@@ -28,7 +28,7 @@
                             <td class="col-sm-1 col-md-1 text-center"><strong>{{product.price}}</strong></td>
                             <td class="col-sm-1 col-md-1 text-center"><strong>{{product.price * $any(quantity.value)}}</strong></td>
                             <td class="col-sm-1 col-md-1">
-                            <button type="button" class="btn btn-danger">
+                            <button (click)="removeProduct(product)" type="button" class="btn btn-danger">
                                 <span class="glyphicon glyphicon-remove"></span> Remove
                             </button></td>
                         </tr>
@@ -63,7 +63,7 @@
                                 <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
                             </button></td>
                             <td>
-                            <button type="button" class="btn btn-success">
+                            <button routerLink = "/checkout" type="button" class="btn btn-success">
                                 Checkout <span class="glyphicon glyphicon-play"></span>
                             </button></td>
                         </tr>

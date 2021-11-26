@@ -8,6 +8,8 @@ import { AlertDetailsComponent } from './alert-details/alert-details.component';
 import { ProductShopComponent } from './product-shop/product-shop.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
+import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
     AlertDetailsComponent,
     ProductShopComponent,
     LandingPageComponent,
-    CartItemsComponent
+    CartItemsComponent,
+    CheckoutFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
