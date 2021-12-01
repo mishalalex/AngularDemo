@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CartItemsComponent } from './cart-items/cart-items.component';
 import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LibraryPageComponent } from './library-page/library-page.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductShopComponent } from './product-shop/product-shop.component';
 
@@ -19,8 +20,11 @@ const routes: Routes = [{
     path: 'cart', component: CartItemsComponent
   },
   {
+    path: 'library', component: LibraryPageComponent
+  },
+  {
     path: 'checkout', component: CheckoutFormComponent
-  }
+  },
 ];
 
 @NgModule({

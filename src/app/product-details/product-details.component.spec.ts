@@ -19,7 +19,17 @@ describe('ProductDetailsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should verify the title of the product details component', ()=> {
+    const element:HTMLElement = fixture.nativeElement;
+    const pageTitle = element.querySelector("h1");
+    expect(pageTitle?.textContent).toBe(component.title)
   });
+
+  it('should be able to toggle the toggleButton ', () => {
+    expect(component).toBeTruthy();
+    expect(component.toggleButton).toBe(true);
+    component.enableBuying();
+    expect(component.toggleButton).toBe(false);
+  });
+
 });

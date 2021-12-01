@@ -1,0 +1,19 @@
+<h2>Books that you own</h2>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">BookName</th>
+        <th scope="col">ISBN</th>
+        <th scope="col">Genre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let book of bookDetails; let rowNumber = index">
+        <th scope="row">{{rowNumber+1}}</th>
+        <td>{{book.book_name}}</td>
+        <td>{{book.isbn}}</td>
+        <td>{{book.genre}}</td>
+      </tr>
+    </tbody>
+  </table>

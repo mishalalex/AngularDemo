@@ -1,4 +1,4 @@
-<div class="my-container">
+<div class="my-container" [hidden]="isSubmitted">
     <form #checkoutForm="ngForm" (ngSubmit)="submitForm(checkoutForm.value)">
         <div class="form-group">
             <label for="exampleInputEmail1">First Name</label>
@@ -24,4 +24,17 @@
         <button type="submit" class="btn btn-primary">Submit</button>
         <p>We will send the invoice to: {{msg}}</p>
       </form>
+</div>
+<div [hidden]="!isSubmitted">
+<div class="jumbotron text-center">
+  <h1 class="display-3">Thank you for your order, {{contact.firstName}}!</h1>
+  <p class="lead"><strong>Please check your email: {{contact.email}}</strong> for further instructions on how to complete your account setup.</p>
+  <hr>
+  <p>
+    Having trouble? <a href="testemail@yopmail.com">Contact us</a>
+  </p>
+  <p class="lead">
+    <a routerLink="" class="btn btn-primary btn-sm" href="https://bootstrapcreative.com/" role="button">Continue to homepage</a>
+  </p>
+</div>
 </div>
