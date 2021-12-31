@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { first } from 'rxjs';
 import { Contact } from '../contacts';
 
 @Component({

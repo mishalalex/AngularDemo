@@ -19,17 +19,20 @@ describe('ProductDetailsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should verify the title of the product details component', ()=> {
-    const element:HTMLElement = fixture.nativeElement;
-    const pageTitle = element.querySelector("h1");
-    expect(pageTitle?.textContent).toBe(component.title)
-  });
-
-  it('should be able to toggle the toggleButton ', () => {
+  it('should be able to toggle the toggleButton in the "enableBuying" function', () => {
     expect(component).toBeTruthy();
     expect(component.toggleButton).toBe(true);
     component.enableBuying();
     expect(component.toggleButton).toBe(false);
+    component.enableBuying();
+    expect(component.toggleButton).toBe(true);
+  });
+
+  it('should verify the title of the product details component', ()=> {
+    const element:HTMLElement = fixture.nativeElement;
+    const pageTitle = element.querySelector("h1");
+    expect(pageTitle?.textContent).toBe(component.title);
+    expect(pageTitle?.textContent).toBe("Mishal's Demo NFT Market on Angular");
   });
 
 });
