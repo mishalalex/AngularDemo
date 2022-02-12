@@ -1,6 +1,8 @@
 # AppDevTest
 This project is a simple angular project which is created to study unit and integration testing.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+This project creates a simple e-commerce app with basic functionalities like listing of products, adding them to cart, calculating the total, and checking the availablity of various products. 
+TypeScript has been used. Unit and Integration testing has been done using Karma and Jasmine, which is available for all angular projects by default.
 
 ## Development server
 
